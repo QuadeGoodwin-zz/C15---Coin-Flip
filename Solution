@@ -1,0 +1,19 @@
+var coin_flips = prompt("Please enter a number here!");
+var heads = 0;
+var tails = 0;
+if (coin_flips != null) {
+    console.log("Total coin flips: " + coin_flips);
+    console.log("=====================");
+    for (i = 0; i < coin_flips; i++) {
+    var num = Math.floor(Math.random() * 2);
+    if (num == 1){
+      heads += 1;
+    }
+    if (num == 0){
+      tails += 1;
+      }
+    }
+    console.log("Heads " + heads);
+    console.log("Tails " + tails);
+  
+}
